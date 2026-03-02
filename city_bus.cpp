@@ -4,8 +4,8 @@ using namespace std;
 double getFare(string s, string d)
 {
     double fare = 0.0;
-    vector route = {"TH", "GA", "IC", "HA", "TE", "LU", "NI", "CA"};
-    vector fares = {800, 600, 750, 900, 1400, 1200, 1100, 1500};
+    vector<char> route = {"TH", "GA", "IC", "HA", "TE", "LU", "NI", "CA"};
+    vector<int> fares = {800, 600, 750, 900, 1400, 1200, 1100, 1500};
 
     auto source_iter = find(route.begin(), route.end(), s);
     auto destination_iter = find(route.begin(), route.end(), d);
